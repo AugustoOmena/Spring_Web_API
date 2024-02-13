@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import curso.myjavawebapi.model.Usuario;
 
 @Repository
-public class UserRepository {
+public class UsuarioRepository {
     public void save(Usuario usuario){
         if (usuario.getId()==null)
             System.out.println("SAVE - Recebendo o usuário na camada de repositório");
@@ -19,7 +19,7 @@ public class UserRepository {
     }
 
     public void deleteById(Integer id){
-        System.out.println(String.format("DELETE/id - Recebendo o Ide: %d para excluir um usuário"));
+        System.out.println(String.format("DELETE/id - Recebendo o Ide: para excluir um usuário"));
         System.out.println(id);
     }
 
